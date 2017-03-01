@@ -1,6 +1,7 @@
 # InstaClone
-An InstagramLike
-To see this work
+An Instagram Like web site in php
+
+To see this work,
 Upload first the php file in your www folder
 Import the prinstagram database and enjoy!
 You can add a new user in the database 
