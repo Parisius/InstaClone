@@ -1,0 +1,180 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+}
+
+a {
+  color: #3897f0;
+  text-decoration: none;
+}
+
+button {
+  color: white;
+  background-color: #3897f0;
+  border: none;
+  font-size: 14px;
+  width: 100px;
+  height: 33px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  transition: background-color 500ms;
+}
+
+button:hover {
+  background-color: #68aef0;
+}
+/* header styles */
+
+header {
+  background-color: white;
+  height: 33px;
+  padding: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+header h1 {
+  float: left;
+}
+
+.header-links {
+  float: right;
+}
+
+header button {
+  margin-right: 24px;
+}
+
+header ul {
+  line-height: 33px;
+}
+
+header ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+header button, header ul {
+  float: left;
+}
+
+/* profile section styles */
+.profile {
+  width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.profile h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  float: left;
+  margin-right: 40px;
+}
+
+/* gallery styles */
+
+.gallery {
+  width: 700px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.image-container {
+  width: 218px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  border: 1px solid #dbdbdb;
+}
+
+.image-container:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.gallery img {
+  width: calc(100% + .49px);
+  display: block;
+  opacity: 1;
+  -webkit-transform:translateZ(0);
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -ms-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.gallery img:hover{
+  opacity: 0.55;
+}
+
+.likes {
+  background-color: white;
+  display: block;
+  padding-top: 4px;
+  padding-left: 4px;
+  width: 214px;
+}
+
+.liked {
+  background-color: pink;
+}
+
+.red {
+  color: red;
+}
+
+/* footer styles */
+footer {
+  padding: 20px;
+  border-top: 1px solid lightgrey;
+}
+
+@media screen and (max-width: 698px ) {
+  header, .profile, .gallery, footer {
+/*    border: 1px solid magenta; */
+   width: calc(100% - 40px);
+  }
+  .image-container {
+    margin-right: 0px;
+    width: calc(50% - 12px);
+  }
+  .image-container:nth-child(2n+1) {
+    margin-right: 20px;
+  }
+  .likes {
+    width: calc(100% - 4px);
+  }
+}
+
+@media screen and (min-width: 898px) {
+  header, .profile, .gallery, footer {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .image-container {
+    width: calc(33.33% - 16px);
+  }
+  .likes {
+    width: calc(100% - 4px);
+  }
+}
